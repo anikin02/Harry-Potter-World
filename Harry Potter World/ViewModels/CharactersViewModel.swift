@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class CharactersViewModel {
+  var characters: [CharacterModel] = []
+  
+  init() {
+    characters = getCharacters()
+  }
+  
+  func getCharacters() -> [CharacterModel] {
+    return [CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage"), CharacterModel(name: "Harry Potter", house: "Gryffindor" ,urlImage: "testImage") ]
+  }
+}
