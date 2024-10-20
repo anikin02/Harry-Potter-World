@@ -11,11 +11,22 @@ class CharactersViewController: UIViewController, UICollectionViewDelegate, UICo
   
   private var collectionView: UICollectionView!
   
-  let charactersViewModel = CharactersViewModel()
+  var viewModel: CharactersViewModel
+  
+  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    
+    viewModel = CharactersViewModel()
+    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+  }
+  
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = .white
+    
     generateCollectionView()
   }
   
@@ -33,15 +44,15 @@ class CharactersViewController: UIViewController, UICollectionViewDelegate, UICo
   }
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return charactersViewModel.characters.count
+    return viewModel.characters.count
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "characterCell", for: indexPath) as! CharacterViewCell
     
-    cell.imageView.image = UIImage(named: charactersViewModel.characters[indexPath.item].urlImage)
-    cell.nameLabel.text = charactersViewModel.characters[indexPath.item].name
-    cell.houseLabel.text = charactersViewModel.characters[indexPath.item].house
+    cell.imageView.image = UIImage(named: viewModel.characters[indexPath.item].urlImage)
+    cell.nameLabel.text = viewModel.characters[indexPath.item].name
+    cell.houseLabel.text = viewModel.characters[indexPath.item].house
     
     return cell
   }

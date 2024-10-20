@@ -20,22 +20,22 @@ class TabBarController: UITabBarController {
       generateVC(
         viewContoller: CharactersViewController(),
         title: "All Characters",
-        image: UIImage(systemName: "person.2")
+        image: UIImage(systemName: "person.2.fill")
       ),
       generateVC(
         viewContoller: CharactersViewController(),
         title: "Hogwarts Students",
-        image: UIImage(systemName: "person.2")
+        image: UIImage(systemName: "graduationcap.fill")
       ),
       generateVC(
         viewContoller: CharactersViewController(),
         title: "Hogwarts Staff",
-        image: UIImage(systemName: "person.2")
-      ),
+        image: UIImage(systemName: "text.book.closed.fill")
+      ),
       generateVC(
         viewContoller: SpellsViewController(),
         title: "All Spells",
-        image: UIImage(systemName: "person.2")
+        image: UIImage(systemName: "wand.and.stars")
       )
     ]
   }
