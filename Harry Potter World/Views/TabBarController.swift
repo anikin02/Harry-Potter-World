@@ -19,22 +19,22 @@ class TabBarController: UITabBarController {
     viewControllers = [
       generateVC(
         viewContoller: CharactersViewController(),
-        title: "Characters",
+        title: "All Characters",
         image: UIImage(systemName: "person.2")
       ),
       generateVC(
         viewContoller: CharactersViewController(),
-        title: "Characters",
+        title: "Hogwarts Students",
         image: UIImage(systemName: "person.2")
       ),
       generateVC(
         viewContoller: CharactersViewController(),
-        title: "Characters",
+        title: "Hogwarts Staff",
         image: UIImage(systemName: "person.2")
       ),
       generateVC(
-        viewContoller: CharactersViewController(),
-        title: "Characters",
+        viewContoller: SpellsViewController(),
+        title: "All Spells",
         image: UIImage(systemName: "person.2")
       )
     ]

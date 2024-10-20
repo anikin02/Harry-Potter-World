@@ -16,6 +16,9 @@
 		78125D652CC38C0B00C26925 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78125D642CC38C0B00C26925 /* CharactersViewModel.swift */; };
 		78125D672CC38C8800C26925 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78125D662CC38C8800C26925 /* CharacterModel.swift */; };
 		78125D6A2CC38F2B00C26925 /* CharacterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78125D692CC38F2B00C26925 /* CharacterViewCell.swift */; };
+		78125D6D2CC49BA200C26925 /* SpellsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78125D6C2CC49BA200C26925 /* SpellsViewModel.swift */; };
+		78125D6F2CC49BAF00C26925 /* SpellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78125D6E2CC49BAF00C26925 /* SpellModel.swift */; };
+		78125D712CC49BD000C26925 /* SpellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78125D702CC49BD000C26925 /* SpellsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		78125D642CC38C0B00C26925 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 		78125D662CC38C8800C26925 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		78125D692CC38F2B00C26925 /* CharacterViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewCell.swift; sourceTree = "<group>"; };
+		78125D6C2CC49BA200C26925 /* SpellsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsViewModel.swift; sourceTree = "<group>"; };
+		78125D6E2CC49BAF00C26925 /* SpellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellModel.swift; sourceTree = "<group>"; };
+		78125D702CC49BD000C26925 /* SpellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				78125D682CC38DFB00C26925 /* Characters */,
+				78125D6B2CC49B6900C26925 /* Spells */,
 				78125D622CC38A9100C26925 /* TabBarController.swift */,
 			);
 			path = Views;
@@ -85,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				78125D662CC38C8800C26925 /* CharacterModel.swift */,
+				78125D6E2CC49BAF00C26925 /* SpellModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -93,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				78125D642CC38C0B00C26925 /* CharactersViewModel.swift */,
+				78125D6C2CC49BA200C26925 /* SpellsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -114,6 +123,14 @@
 				78125D692CC38F2B00C26925 /* CharacterViewCell.swift */,
 			);
 			path = Characters;
+			sourceTree = "<group>";
+		};
+		78125D6B2CC49B6900C26925 /* Spells */ = {
+			isa = PBXGroup;
+			children = (
+				78125D702CC49BD000C26925 /* SpellsViewController.swift */,
+			);
+			path = Spells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,8 +208,11 @@
 				78125D632CC38A9100C26925 /* TabBarController.swift in Sources */,
 				78125D4B2CC3881C00C26925 /* AppDelegate.swift in Sources */,
 				78125D672CC38C8800C26925 /* CharacterModel.swift in Sources */,
+				78125D6F2CC49BAF00C26925 /* SpellModel.swift in Sources */,
 				78125D4D2CC3881C00C26925 /* SceneDelegate.swift in Sources */,
+				78125D712CC49BD000C26925 /* SpellsViewController.swift in Sources */,
 				78125D652CC38C0B00C26925 /* CharactersViewModel.swift in Sources */,
+				78125D6D2CC49BA200C26925 /* SpellsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

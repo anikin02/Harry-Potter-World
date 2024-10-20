@@ -39,7 +39,6 @@ class CharactersViewController: UIViewController, UICollectionViewDelegate, UICo
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "characterCell", for: indexPath) as! CharacterViewCell
     
-    // Установка изображения и текста
     cell.imageView.image = UIImage(named: charactersViewModel.characters[indexPath.item].urlImage)
     cell.nameLabel.text = charactersViewModel.characters[indexPath.item].name
     cell.houseLabel.text = charactersViewModel.characters[indexPath.item].house
